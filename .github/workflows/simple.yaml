@@ -35,7 +35,7 @@ jobs:
         run: cat(paste0("Hello ", Sys.getenv("NAME"), "! 👋"))
         shell: Rscript {0}
         env:
-          NAME: "Dominika"
+          NAME: "dominika"
 
   # Second job - by default jobs will run in parallel, unless some dependencies
   # are introduced between them.
@@ -136,4 +136,4 @@ jobs:
     name: Reusable workflow ♻️
     uses: user-workshop-cicd/r.pkg.template/.github/workflows/sample-reusable-workflow.yaml@main
     with:
-      name: Dominika
+      name: dominika
